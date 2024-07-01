@@ -1,0 +1,97 @@
+:root {
+  --color-light: #ffe8cc;
+  --color-medium: #ffa94d;
+  --color-dark: #ff922b;
+}
+
+.sidebar{
+  grid-area: block-1;
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+
+button {
+  background-color: var(--color-dark);
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+.form-add-friend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-light);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+.form-add-friend label {
+  padding-top: 5px;
+}
+
+.form-add-friend button {
+  margin-top: 10px;
+}
+
+.form-split-bill {
+  grid-area: block-2;
+}
+.form-split-bill div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-light);
+  border-radius: 5px;
+  padding: 0 10px 10px;
+  margin-left: 15px;
+} 
+
+.form-split-bill label {
+  padding-top: 5px;
+}
+.form-split-bill button {
+  margin-top: 30px
+}
+img {
+  border-radius: 50%;
+}
+
+ul li {
+  margin-top: 7px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+
+}
+
+ul li:hover {
+  background-color: var( --color-light);
+   
+}
+
+ul li.selected {
+  background-color: var( --color-light);   
+}
+.app {   
+  display: grid;
+  grid-template-areas: 'block-1 block-2' 'block-1 block-2';  
+  grid-template: auto;
+  grid-template-columns: 300px 300px
+  
+}
